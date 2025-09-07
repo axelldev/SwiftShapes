@@ -22,21 +22,21 @@ struct ShapesExample: View {
 
         // Triangle Shape
         Path { p in
-            p.move(to: CGPoint(x: 75, y: 10))
-            p.addLine(to: CGPoint(x: 10, y: 130))
-            p.addLine(to: CGPoint(x: 130, y: 130))
+            p.move(to: CGPoint(x: 70, y: 0))
+            p.addLine(to: CGPoint(x: 0, y: 140))
+            p.addLine(to: CGPoint(x: 140, y: 140))
         }
         .fill(.green.opacity(0.3))
         .overlay {
             Path { p in
-                p.move(to: CGPoint(x: 75, y: 10))
-                p.addLine(to: CGPoint(x: 10, y: 130))
-                p.addLine(to: CGPoint(x: 130, y: 130))
+                p.move(to: CGPoint(x: 70, y: 0))
+                p.addLine(to: CGPoint(x: 0, y: 140))
+                p.addLine(to: CGPoint(x: 140, y: 140))
                 p.closeSubpath()
             }
             .stroke(.green, lineWidth: 2)
         }
-        .frame(width: 140, height: 140)
+        .frame(width: 142, height: 142)
         .border(.gray.opacity(0.3))
         
     }
